@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navItem">
+            <ul>
+                <!-- <li>Home</li> -->
+                <li>Generator</li>
+                <li><button id="referesh" class="btn">Refresh</button></li>
+            </ul>
+        </div>
+    </nav>/
+    <main>
+        <div class="mainItem">
+
+            <div class="table" id="tabl">
+                <h3>Generate Table</h3>
+                <input type="number" step="any" id="inputName" placeholder="Enter the number">
+                <button id="btn" class="btn">
+                    Generate
+                </button>
+
+                <div id="result"></div>
+            </div>
+
+
+            <!-- secod section -->
+            <div class="table" id="tabl1">
+                <h3>Generate Body Mass Index</h3>
+                <input type="number" step="any" id="inputWeight" placeholder="Enter  Weight In Kg">
+                <input type="number" step="any" id="inputHeight" placeholder="Enter Height In Meter">
+                <button id="btn1" class="btn">
+                    Generate
+                </button>
+                <div id="result1"></div>
+            </div>
+
+
+            <!-- birth section -->
+
+            <div class="table" id="tabl1">
+                <h3>Calculate Your Age</h3>
+
+            <input type="date" id="birthDate" placeholder="Enter Your Date Of Birth">
+                <!-- <input type="number"   id="currentDate" placeholder="Enter Your Current Year"> -->
+                <div id="cur">
+
+                </div>
+                <button id="btn2" class="btn">
+                    Calculate Age
+                </button>
+                <div id="result2"></div>
+            </div>
+
+            <!-- text to Speech -->
+
+            <div class="table" id="tabl1">
+                <h3>Text to Speech </h3>
+                <textarea name="" placeholder="" id="text" cols="15" rows="7"></textarea>
+                
+                <button id="btn3" class="btn">
+                    Speak
+                </button>
+                <div id="result3"></div>
+            </div>
+
+
+            <!-- stop watch -->
+
+            <div class="table" id="tabl1">
+                <h3>stop watch </h3>
+                <!-- <input type="text" id="enter" placeholder="Enter stop timing" value=""> -->
+                <input type="text" id="watch" value="">
+                <button id="start" onclick="start()" class="btn">start</button>
+                <button id="restart" onclick="restart()" class="btn">restart</button>
+                <button id="Stop" onclick="stop()" class="btn">Stop</button>
+                <div id="result4"></div>
+            </div>
+            
+
+             <!-- Speech to text  -->
+
+             <div class="table" id="tabl1">
+                <h3>Speech to Text  </h3>
+                <textarea name="" placeholder="" id="text1" cols="15" rows="7"></textarea>
+                
+                <button id="btn4" class="btn">
+                    Speak
+                </button>
+                <div id="result5"></div>
+            </div>
+            <!--Convert to Upper Case -->
+            
+            <div class="table" id="tabl1">
+                <h3>convert to Upper Case</h3>
+                <textarea name="" id="texty" cols="60" rows="10"></textarea>
+                <button id="btn5" class="btn">To UpperCase</button>
+
+            </div>
+            <!--Convert to lower Case -->
+            
+            <div class="table" id="tabl1">
+                <h3>convert to Upper Case</h3>
+                <textarea name="" id="text2" cols="60" rows="10"></textarea>
+                <button id="btn6" class="btn">To LowerCase</button>
+
+            </div>
+
+
+            
+        </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
